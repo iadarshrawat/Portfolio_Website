@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from "framer-motion"
 import Typewriter from 'typewriter-effect';
-import { BsArrowUpRight } from "react-icons/bs"
-// import me from "../assets/me.jpg"
+import { BsArrowUpRight, BsChevronDown } from "react-icons/bs"
+import me from "../assets/me.jpeg"
+import "../styles/home.scss"
+
 
 const Home = () => {
 
@@ -64,7 +66,7 @@ const Home = () => {
               </p>
               <span>Projects Made</span>
             </article>
-          
+
             <article data-special>
               <p>Contact</p>
               <span>00adarshrawat00@gmail.com</span>
@@ -73,8 +75,12 @@ const Home = () => {
         </div>
       </section>
       <section>
-        {/* <img src={me} alt="Adarsh" /> */}
+        <img src={me} alt="Adarsh" />
       </section>
+
+      {/* <section> */}
+        <BsChevronDown />
+      
     </div>
   )
 }
