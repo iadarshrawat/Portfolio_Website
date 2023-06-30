@@ -7,7 +7,7 @@ const Header = () => {
     <h2>Adarsh Rawat</h2>
     <div>
       <a href='#home'>Home</a>
-      <a href='#work'>work</a>
+      <a href='#work'>Work</a>
       <a href='#timeline'>Experience</a>
       <a href='#testimonial'>Testimonial</a>
       <a href='#contact'>Contact</a>

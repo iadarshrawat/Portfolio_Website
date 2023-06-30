@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from "framer-motion"
+import React, { useRef } from 'react';
+import { animate, motion } from "framer-motion"
 import Typewriter from 'typewriter-effect';
 import { BsArrowUpRight, BsChevronDown } from "react-icons/bs"
 import me from "../assets/me.jpeg"
@@ -7,6 +7,22 @@ import "../styles/home.scss"
 
 
 const Home = () => {
+
+  const clientCount = useRef(null);
+  const projectCount = useRef(null);
+  const animationClientsCount = ()=>{
+    animate(0, 100,{
+      duration:1,
+      onUpdate:(v)=>(clientCount.current.textContent = v.toFixed()),
+    })
+  }
+
+  const animationProjectsCount = ()=>{
+    animate(0, 200, {
+      duration:1,
+      onUpdate:(v)=>(projectCount.current.textContent = v.toFixed()),
+    })
+  }
 
   const animation = {
     h1: {
@@ -54,7 +70,7 @@ const Home = () => {
 
           <article>
             <p>
-              +<span>100</span>
+              +<motion.span whileInView={animationClientsCount} ref={clientCount}>100</motion.span>
             </p>
             <span>Client WorldWide</span>
           </article>
@@ -62,7 +78,7 @@ const Home = () => {
           <aside>
             <article>
               <p>
-                +<span>500</span>
+              +<motion.span whileInView={animationProjectsCount} ref={projectCount}>100</motion.span>
               </p>
               <span>Projects Made</span>
             </article>
@@ -78,8 +94,8 @@ const Home = () => {
         <img src={me} alt="Adarsh" />
       </section>
 
-      {/* <section> */}
-        <BsChevronDown />
+
+      <BsChevronDown />
       
     </div>
   )
