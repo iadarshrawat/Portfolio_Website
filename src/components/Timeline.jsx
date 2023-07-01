@@ -11,17 +11,15 @@ const Timeline = () => {
               }`}
             >
 
-<div>
-<h2>{item.title}</h2>
-              <p>{item.date}</p>
-</div>
-              
+              <div>
+                <h2>{item.title}</h2>
+                <p>{item.date}</p>
+              </div>
 
 
             </div>
           ))
         }
-
       </div>
     </div>
   )
