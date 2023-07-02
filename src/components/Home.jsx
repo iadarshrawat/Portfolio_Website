@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import { BsArrowUpRight, BsChevronDown } from "react-icons/bs"
 import me from "../assets/me.jpeg"
 import "../styles/home.scss"
-
+import "../styles/mediaquery.scss"
 
 const Home = () => {
 

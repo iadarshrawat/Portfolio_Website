@@ -1,5 +1,6 @@
 import React from 'react'
 import data from '../assets/data.json'
+import "../styles/mediaquery.scss"
 
 const Timeline = () => {
   return (

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import toast from "react-hot-toast";
 import {addDoc, collection} from "firebase/firestore"
 import {db} from '../firebase'
-
+import "../styles/mediaquery.scss"
 
 function Contact() {
 

@@ -1,6 +1,7 @@
 import React from 'react'
 import {motion} from 'framer-motion'
 import {AiFillIeCircle, AiFillAndroid, AiFillWindows} from "react-icons/ai"
+import "../styles/mediaquery.scss"
 
 function Services() {
 

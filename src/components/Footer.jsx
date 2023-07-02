@@ -1,5 +1,6 @@
 import React from 'react'
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineArrowUp} from 'react-icons/ai'
+import "../styles/mediaquery.scss"
 
 function Footer() {
     return (
@@ -24,9 +25,12 @@ function Footer() {
                     </a>
                 </article>
             </aside>
+            <mark>
             <a href="#home">
                 <AiOutlineArrowUp/>
             </a>
+            </mark>
+            
         </footer>
 
 

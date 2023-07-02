@@ -1,5 +1,6 @@
 import React from 'react'
 import user from '../assets/user.png'
+import "../styles/mediaquery.scss"
 
 const Testimonial = () => {
     const name = "Adarsh";

@@ -16,8 +16,9 @@
     
         >section {
             display: flex;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
-            justify-content: space-between;
             width: 80%;
             margin: auto;
             height: 40rem;
@@ -37,7 +38,7 @@
                 position: relative;
     
                 > img {
-                    top: 0%;
+                    top: 5%;
                     width: 100px;
                     height: 100px;
                     position: absolute;
