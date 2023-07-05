@@ -386,7 +386,13 @@
         
     }
 
+
+
     #contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         >section > form{
             >h2{
                 font: 100 2.3rem $text2;
@@ -395,7 +401,13 @@
                 width: 65%;
             }
         }
+        aside{
+            border-radius: 10%;
+            padding: 1rem;
+        }
     }
+
+
     footer{
         padding-left: $p_zero;
         grid-template-columns: 1fr;
