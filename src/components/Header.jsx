@@ -1,7 +1,7 @@
 import React from 'react'
 import {AiOutlineMenu} from "react-icons/ai"
 
-const Header = () => {
+const Header = ({menuOpen, setMenuOpen}) => {
   return <nav>
 
     <h2>Adarsh Rawat</h2>
@@ -17,11 +17,11 @@ const Header = () => {
       <button>Email</button>
     </a>
 
-    <button>
+    <button onClick={()=>setMenuOpen(!menuOpen)}>
       <AiOutlineMenu/>
     </button>
-    
+  
   </nav>;
 };
 
-export default Header
+export default Header;

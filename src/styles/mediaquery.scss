@@ -200,6 +200,31 @@
             gap: 0.5rem;
         }
     }
+
+    footer{
+        padding-left: $p_zero;
+        grid-template-columns: 1fr;
+        >div{
+            
+            width: 100%;
+            border: none;
+            p {
+                width: 50%;
+                margin:2rem auto;
+            }
+        }
+        > mark{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                margin: 1rem;
+            }
+        } 
+        
+    }
+
+
 }
 
 
@@ -405,30 +430,6 @@
             border-radius: 10%;
             padding: 1rem;
         }
-    }
-
-
-    footer{
-        padding-left: $p_zero;
-        grid-template-columns: 1fr;
-        >div{
-            
-            width: 100%;
-            border: none;
-            p {
-                width: 50%;
-                margin:2rem auto;
-            }
-        }
-        > mark{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            a {
-                margin: 1rem;
-            }
-        } 
-        
     }
 }
 
