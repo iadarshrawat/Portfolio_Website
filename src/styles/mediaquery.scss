@@ -189,29 +189,100 @@
 
 
 
-@media screen and (max-width:950px) {
+
+@media screen and (max-width:900px) {
     nav{
         padding: 0 $p_sm;      
         >h2{
-            font-size: 1.8rem;
+            font-size: 1.4rem;
         }
         >div{
-            gap: 1rem;
+            gap: 0.5rem;
         }
     }
+}
 
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    nav{
+       > div , > a {
+        display: none;
+       }
+       > button {
+        display: inline;
+       }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:720px) {
+   
     #home {
+        height: unset;
+        flex-direction: column-reverse;
         >section {
             &:first-of-type {
-                padding-left: $p_sm;
+                width: 100vw;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                
+                // background: green;
+                
                 > div {
+                    width: 100%;
+                    border: none;
+                    padding-top: 3rem;
+                    // background: red;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                   
+                    >h1{
+                        font: 900 2.5rem $text1;
+                    }
                     >div{
-                        gap: 2rem;
-                        width: 100%;
+                        flex-direction: column;
+                        // background: blue;
+                        margin: 10px 0px;
                     }
                     aside{
                         width: 85%;
                         flex-direction: column;
+                        align-items: center;
                     }
                 }
                 
@@ -220,23 +291,70 @@
     }
 
     #work{
-        padding: 8rem $p_zero;
-        height: 110vh;
-        
+      
         >section{
+            
             >article {
-                height: 25rem;
+                width: 100%;
+                height: 30vmax;
+                
             }
             .workItem{
-                height: 25rem;
+                height: 30vmax;
+                box-shadow: 0 0 5px $color1;
+                
+                > aside {
+                    margin: 1rem;
+                    >h3{
+                        margin: 1rem;
+                        font-size: 20px;
+                    }
+                    >p{
+                        letter-spacing: 0ch;
+                        line-height: unset;
+                        margin: 0;
+                        font-size: 0.5rem;
+                    }
+                    >a{
+                        padding: 0.2rem 0.6rem;
+                        font-size: 0.7rem;
+                        margin: 1rem;
+                    }
+                }
+                
             }
         }
     }
 
+
+    #timeline {
+        .timelineBox::after{
+            left: 31px;
+
+        }
+        .timelineItem{
+            width: 100%;
+            padding-left: 5rem;
+            padding-right: 2rem;
+        }
+        .rightTimeline{
+            left: 0%;
+        }
+        .rightTimeline, .leftTimeline {
+            &::after{
+                left: 15px;
+            }
+        }
+
+    }
+
+
     #services{
         >section{
-            height: 70%;
-            width: 90%;
+            margin: 3rem 0;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+           
         }
     }
 
@@ -245,14 +363,22 @@
         >.testimonialCard{
             
             padding: 2rem;
+            height: unset;
+            
             >section{
+                height: 100%;
                 justify-content: space-evenly;
                 padding: 2vmax;
+                flex-direction: row;
+                flex-wrap: wrap;
                 width: 100%;
                 >article{
-                    
+                    width: 15rem;
+                    height: 25rem;
+                    margin: 1rem;
+                    padding: 2rem;
                     > * {
-                        margin: 0.6rem;
+                        margin: 0.3rem;
                     }
                 }
             }
@@ -293,3 +419,5 @@
         
     }
 }
+
+

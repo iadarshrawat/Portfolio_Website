@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {AiOutlineMenu} from "react-icons/ai"
 
 const Header = () => {
   return <nav>
@@ -17,7 +17,10 @@ const Header = () => {
       <button>Email</button>
     </a>
 
-
+    <button>
+      <AiOutlineMenu/>
+    </button>
+    
   </nav>;
 };
 
