@@ -6,7 +6,7 @@ import "../styles/mediaquery.scss"
 
 const Work = () => {
   return <div id='work'>
-    <h2>WORK</h2>
+    <h1>WORK</h1>
     <section>
       <article>
         <Carousel
