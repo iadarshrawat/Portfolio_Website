@@ -1,7 +1,7 @@
 @import './statics.scss';
 
 nav {
-    width: 100%;
+    width: 100vw;
     height: 100px;
     background-color: $color1;
     display: flex;
@@ -13,7 +13,12 @@ nav {
     z-index: 60;
 
     >h2 {
-        font-size: 2rem;
+        font-size: 1.7rem;
+        color: $color6;
+        > .green {
+            font-size: 2.5rem;
+            color: $color3;
+        }
     }
 
     >div {
@@ -22,6 +27,7 @@ nav {
         gap: 2rem;
 
         >a {
+            font-size: 0.8rem;
             color: $color6;
             font-weight: 500;
             transition: all 0.3s;
@@ -32,7 +38,7 @@ nav {
             }
         }
     }
-
+>div{
     >a {
         >button {
             border: 1px solid $color6_1;
@@ -45,17 +51,19 @@ nav {
             transition: all 0.3s;
 
             &:hover {
-                background-color: $color6;
-                color: $color4;
+                background: $color3;
+                color: black;
             }
         }
     }
+}
+    
 
 
     > button {
         border: none;
         background-color: transparent;
-        color: $color5;
+        color: $color6;
         font-size: 1.4rem;
         display: none;
         width: 40px;

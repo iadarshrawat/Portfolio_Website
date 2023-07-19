@@ -1,39 +1,38 @@
 @import 'statics.scss';
 
 @media screen and (max-width:1367px) {
-    nav{
-        padding: 0 $p_md;      
+    nav {
+        padding: 0 $p_md;
     }
 
     #home {
-        height: 100vh;
         >section {
-            &:first-of-type {
-                padding-left: $p_md;
-                > div aside {
-                    width: 85%;
-                }
+            >div {
+                padding: 3rem;
             }
         }
     }
 
-    #work{
+    #work {
         padding: 8rem $p_md;
         height: 110vh;
-        
-        >section{
+
+        >section {
             >article {
                 height: 20rem;
                 width: 90%;
             }
-            .workItem{
+
+            .workItem {
                 padding: 2rem;
                 height: 20rem;
-                >aside{
-                    >p{
+
+                >aside {
+                    >p {
                         margin: 1rem;
                     }
-                    >a{
+
+                    >a {
                         margin: 1rem;
                     }
                 }
@@ -41,33 +40,37 @@
         }
     }
 
-    #services{
+    #services {
         padding-left: 3vmax;
         padding-right: 3vmax;
-        >section{
+
+        >section {
             height: 80%;
             width: 90%;
         }
     }
 
-    #testimonial{
-        
-        >.testimonialCard >section{
+    #testimonial {
+
+        >.testimonialCard>section {
             padding: 3vmax;
             width: 100%;
-            
+
         }
     }
 
-    #contact{
-        >section > form{
-            >input,>button{
-                font:400 0.8rem, $text1;
+    #contact {
+        >section>form {
+
+            >input,
+            >button {
+                font: 400 0.8rem, $text1;
                 width: 50%;
             }
         }
     }
-    footer{
+
+    footer {
         padding-left: $p_md;
     }
 }
@@ -95,70 +98,74 @@
 
 
 
-@media screen and (max-width:1100px) {
-    nav{
-        padding: 0 $p_base;   
-        >h2{
-            font-size: 1.8rem;
-        }
-
-        >div{
-            gap: 1rem;
-        }   
-    }
-
+@media screen and (max-width:1200px) {
     #home {
-        height: 110vh;
         >section {
-            &:first-of-type {
-                padding-left: $p_base;
-                > div {
-                    >h1{
-                        font:900 3rem $text1;
-                    }
-                    aside {
-                        width: 100%;
+
+            >div {
+                padding: 2rem;
+
+                >.right {
+                    >img {
+                        height: 300px;
                     }
                 }
             }
         }
     }
 
-    #work{
+    nav {
+        padding: 0 $p_base;
+
+        >h2 {
+            font-size: 1.8rem;
+        }
+
+        >div {
+            gap: 1rem;
+        }
+    }
+
+    #work {
         padding: 8rem $p_base;
     }
 
-    #services{
+    #services {
         padding: 17vmax 2vmax;
         text-align: center;
     }
 
-    #testimonial{
-        
-        >.testimonialCard{
+    #testimonial {
+
+        >.testimonialCard {
             padding: 3rem;
-            >section{
+
+            >section {
                 padding: 3vmax;
                 width: 100%;
-                >article{
-                    > * {
+
+                >article {
+                    >* {
                         margin: 1rem;
                     }
                 }
             }
-        } 
-        
+        }
+
     }
 
-    #contact{
-        >section > form{
-            >input,>button{
-                font:400 0.8rem, $text1;
+    #contact {
+        >section>form {
+
+            >input,
+            >button {
+                font: 400 0.8rem, $text1;
                 width: 50%;
             }
         }
     }
-    footer{
+
+    footer {
         padding-left: $p_md;
     }
 }
@@ -170,9 +177,19 @@
 
 
 
+@media screen and (max-width:980px) {
+    nav {
 
+        >div,
+        >a {
+            display: none;
+        }
 
-
+        >button {
+            display: inline;
+        }
+    }
+}
 
 
 
@@ -191,37 +208,33 @@
 
 
 @media screen and (max-width:900px) {
-    nav{
-        padding: 0 $p_sm;      
-        >h2{
-            font-size: 1.4rem;
-        }
-        >div{
-            gap: 0.5rem;
-        }
-    }
 
-    footer{
+
+    footer {
         padding-left: $p_zero;
         grid-template-columns: 1fr;
-        >div{
-            
+
+        >div {
+
             width: 100%;
             border: none;
+
             p {
                 width: 50%;
-                margin:2rem auto;
+                margin: 2rem auto;
             }
         }
-        > mark{
+
+        >mark {
             display: flex;
             align-items: center;
             justify-content: center;
+
             a {
                 margin: 1rem;
             }
-        } 
-        
+        }
+
     }
 
 
@@ -236,15 +249,41 @@
 
 
 
-@media screen and (max-width:800px) {
-    nav{
-       > div , > a {
-        display: none;
-       }
-       > button {
-        display: inline;
-       }
+@media screen and (max-width:850px) {
 
+    #home {
+        >section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100%;
+
+            >div {
+                flex-direction: column-reverse;
+
+                >.left {
+                    width: 100%;
+                    flex-direction: column;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    >h1 {
+                        text-align: center;
+                    }
+
+                    >p {
+                        text-align: center;
+                    }
+                }
+
+                >.right {
+                    >img {
+                        height: 300px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -272,101 +311,69 @@
 
 
 @media screen and (max-width:720px) {
-   
-    #home {
-        height: unset;
-        flex-direction: column-reverse;
-        >section {
-            &:first-of-type {
-                width: 100vw;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                justify-content: center;
-                
-                // background: green;
-                
-                > div {
-                    width: 100%;
-                    border: none;
-                    padding-top: 3rem;
-                    // background: red;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    text-align: center;
-                   
-                    >h1{
-                        font: 900 2.5rem $text1;
-                    }
-                    >div{
-                        flex-direction: column;
-                        // background: blue;
-                        margin: 10px 0px;
-                    }
-                    aside{
-                        width: 85%;
-                        flex-direction: column;
-                        align-items: center;
-                    }
-                }
-                
-            }
-        }
-    }
 
-    #work{
-      
-        >section{
-            
+    #work {
+
+        >section {
+
             >article {
                 width: 100%;
                 height: 30vmax;
-                
+
             }
-            .workItem{
+
+            .workItem {
                 height: 30vmax;
                 box-shadow: 0 0 5px $color1;
-                
-                > aside {
+
+                >aside {
                     margin: 1rem;
-                    >h3{
+
+                    >h3 {
                         margin: 1rem;
                         font-size: 20px;
                     }
-                    >p{
+
+                    >p {
                         letter-spacing: 0ch;
                         line-height: unset;
                         margin: 0;
                         font-size: 0.5rem;
                     }
-                    >a{
+
+                    >a {
                         padding: 0.2rem 0.6rem;
                         font-size: 0.7rem;
                         margin: 1rem;
                     }
                 }
-                
+
             }
         }
     }
 
 
+
+
     #timeline {
-        .timelineBox::after{
+        .timelineBox::after {
             left: 31px;
 
         }
-        .timelineItem{
+
+        .timelineItem {
             width: 100%;
             padding-left: 5rem;
             padding-right: 2rem;
         }
-        .rightTimeline{
+
+        .rightTimeline {
             left: 0%;
         }
-        .rightTimeline, .leftTimeline {
-            &::after{
+
+        .rightTimeline,
+        .leftTimeline {
+            &::after {
                 left: 15px;
             }
         }
@@ -374,59 +381,65 @@
     }
 
 
-    #services{
-        >section{
+    #services {
+        >section {
             margin: 3rem 0;
             grid-template-columns: repeat(2, 1fr);
             gap: 1rem;
-           
+
         }
     }
 
-    #testimonial{
-        
-        >.testimonialCard{
-            
+    #testimonial {
+
+        >.testimonialCard {
+
             padding: 2rem;
             height: unset;
-            
-            >section{
+
+            >section {
                 height: 100%;
                 justify-content: space-evenly;
                 padding: 2vmax;
                 flex-direction: row;
                 flex-wrap: wrap;
                 width: 100%;
-                >article{
+
+                >article {
                     width: 15rem;
                     height: 25rem;
                     margin: 1rem;
                     padding: 2rem;
-                    > * {
+
+                    >* {
                         margin: 0.3rem;
                     }
                 }
             }
-        } 
-        
+        }
+
     }
 
 
 
-    #contact{
+    #contact {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        >section > form{
-            >h2{
+
+        >section>form {
+            >h2 {
                 font: 100 2.3rem $text2;
             }
-            >input,>button{
+
+            >input,
+            >button {
                 width: 65%;
             }
         }
-        aside{
+
+        aside {
             border-radius: 10%;
             padding: 1rem;
         }
@@ -434,3 +447,24 @@
 }
 
 
+@media screen and (max-width:520px) {
+    nav{
+        > h2 {
+            font-size: 1rem;
+        }
+    }
+    #home {
+        >section {
+
+            >div {
+                padding: 2rem;
+
+                >.right {
+                    >img {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}
