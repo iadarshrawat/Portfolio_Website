@@ -455,10 +455,11 @@
     }
     #home {
         >section {
-
             >div {
                 padding: 2rem;
-
+                >.left{
+                    background: red;
+                }
                 >.right {
                     >img {
                         height: 200px;
