@@ -1,5 +1,6 @@
 import React from 'react'
 import {AiOutlineMenu} from "react-icons/ai"
+import resume from "../assets/resume.pdf"
 
 const Header = ({menuOpen, setMenuOpen}) => {
   return <nav>
@@ -22,7 +23,7 @@ const Header = ({menuOpen, setMenuOpen}) => {
     <a href='mailto:00adarshrawat00@gmail.com'>
       <button>Email</button>
     </a>
-    <a href='https://docs.google.com/document/d/15lQh1WiPPCjSkPqjveS0EFdFxLkyEtVPrQ-ZMoqZ2NE/edit'>
+    <a href={resume}>
       <button>Resume</button>
     </a>
     </div>

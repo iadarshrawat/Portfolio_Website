@@ -1,6 +1,7 @@
 import React from 'react';
 import GitHubCalendar from 'react-github-calendar';
 import "../styles/gitcal.scss"
+import { color } from 'framer-motion';
 
 const GitHubContributions = () => {
   const username = 'iadarshrawat';
@@ -14,12 +15,10 @@ const GitHubContributions = () => {
         blockSize={20}
         colorScheme={'light'}
         blockMargin={4}
-        fontSize={20}
+        fontSize={15}
         blockRadius={10}
-        hideColorLegend={true}
-        tooltips
-        tooltipDateFormat="MMM D, YYYY"
-        summaryText="This is my GitHub contribution graph!"
+        hideColorLegend
+        labels={{}}
         proxy={(url) => `/api/github-proxy?url=${url}`}
         token={token}
       />

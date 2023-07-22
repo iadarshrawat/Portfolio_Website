@@ -448,17 +448,27 @@
 
 
 @media screen and (max-width:520px) {
+
     nav{
         > h2 {
             font-size: 1rem;
         }
     }
+
     #home {
         >section {
             >div {
                 padding: 2rem;
                 >.left{
-                    background: red;
+                    >.h1{
+                        font-size: 2rem;
+                    }
+                    >Typewriter{
+                        font-size: 0.5rem
+                    }
+                    >button{
+                        padding: 1rem;
+                    }
                 }
                 >.right {
                     >img {
@@ -468,4 +478,71 @@
             }
         }
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:400px) {
+
+    #home {
+        >section {
+            >div {
+                padding: 1rem;
+                >.left{
+                    >.h1{
+                        font-size: 2rem;
+                    }
+                    .typewriterpara {
+                        height: 15px;
+                        font-size: 15px;
+                        letter-spacing: 2px;
+                    }
+                    >button{
+                        padding: 1rem;
+                    }
+                }
+                >.right {
+                    >img {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    #gitcal{
+        margin: 2rem;
+        > h1 {
+            font-size: 2rem;
+        }
+    }
+
 }
