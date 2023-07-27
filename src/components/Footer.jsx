@@ -1,12 +1,13 @@
 import React from 'react'
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineArrowUp} from 'react-icons/ai'
 import "../styles/mediaquery.scss"
+import meFooter from '../assets/meFooter.jpeg'
 
 function Footer() {
     return (
         <footer>
             <div>
-                <img src="https://avatars.githubusercontent.com/u/42698533?v=4" alt="Founder" />
+                <img src={meFooter} alt="Founder" />
                 <h2>Adarsh Rawat</h2>
                 <p>Motivation is temporary, but discipline last forewer.</p>
             </div>
