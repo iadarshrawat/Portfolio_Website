@@ -3,7 +3,6 @@
 #contact{
     min-height: 90vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
 
     > section {
         background-color: $color4;
@@ -29,37 +28,21 @@
                 outline: none;
                 font: 400 0.9rem $text1;
                 margin: 1rem;
-                border: none;
+                border: 2px solid $color1
             }
 
             > button {
                 cursor: pointer;
-                background-color: $color3;
+                background-color: $color1;
                 color: $color4;
                 font: 600 1rem $text1;
                 margin: 3rem;
                 &:hover{
-                    background-color: $color3_1;
+                    background-color: $color3;
                 }
             }
 
         }
 
     }
-
-    > aside {
-        width: 100%;
-        height: 100%;
-        background-color: $color5;
-        display: grid;
-        place-items: center;
-        img{
-            width: 70%;
-            height: 70%;
-            object-fit: contain;
-            filter: drop-shadow(0 0 10px rbga(0,0,0,0.322) hue-rotate(150deg));
-            animation: upupdowndow 0.7s infinite linear alternate
-        }
-    }
-
 }

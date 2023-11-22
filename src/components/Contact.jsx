@@ -45,11 +45,6 @@ function Contact() {
 
         </form>
       </section>
-
-      <aside>
-        <img src={contactMe} alt="Graphics" />
-      </aside>
-
     </div>
   )
 }

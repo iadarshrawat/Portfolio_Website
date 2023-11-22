@@ -9,7 +9,7 @@ function Footer() {
             <div>
                 <img src={meFooter} alt="Founder" />
                 <h2>Adarsh Rawat</h2>
-                <p>Motivation is temporary, but discipline last forewer.</p>
+                <p>Created by Adarsh Rawat and all ©️ are reserved 😊</p>
             </div>
 
             <aside>
