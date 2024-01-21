@@ -3,7 +3,6 @@ import toast from "react-hot-toast";
 import {addDoc, collection} from "firebase/firestore"
 import {db} from '../firebase'
 import "../styles/mediaquery.scss"
-import contactMe from '../assets/contactMe.jpg'
 
 function Contact() {
 
@@ -42,7 +41,6 @@ function Contact() {
           <input type="text" value={message} onChange={(e)=>setMessage(e.target.value)} placeholder='Your Message' required/>
 
           <button type='submit'disabled={disableBtn}>Send</button>
-
         </form>
       </section>
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import {AiOutlineMenu} from "react-icons/ai"
-import resume from "../assets/resume.pdf"
+
 
 const Header = ({menuOpen, setMenuOpen}) => {
   return <nav>
@@ -15,15 +15,15 @@ const Header = ({menuOpen, setMenuOpen}) => {
       <a href='#home'>Home</a>
       <a href='#work'>Work</a>
       <a href='#timeline'>Experience</a>
-      <a href='#testimonial'>Testimonial</a>
+      <a href='#skills'>Skills</a>
       <a href='#contact'>Contact</a>
     </div>
     <div>
-    <a href='mailto:00adarshrawat00@gmail.com'>
+    <a href='mailto:00adarshrawat00@gmail.com' target='blank'>
       <button>Email</button>
     </a>
-    <a href={resume}>
-      <button>Resume</button>
+    <a href='https://github.com/iadarshrawat' target='blank'>
+      <button>Github</button>
     </a>
     </div>
     

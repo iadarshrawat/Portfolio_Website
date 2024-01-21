@@ -7,6 +7,9 @@ import Footer from "./components/Footer";
 import { Toaster } from "react-hot-toast";
 import { useState } from "react";
 import HeaderPhone from "./components/HeaderPhone";
+import Work from "./components/Work";
+import Skills from "./components/Skills";
+import CustomTerminal from "./components/CustomTerminal";
 function App() {
 
 
@@ -17,7 +20,10 @@ const [menuOpen , setMenuOpen] = useState(false);
   <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
   <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
   <Home/>
+  <Work/>
   <Timeline/>
+  <Skills/>
+  <CustomTerminal/>
   <Contact/>
   <Footer/>
   <Toaster/>
