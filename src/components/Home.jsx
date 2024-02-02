@@ -5,7 +5,7 @@ import { BsArrowUpRight, BsChevronDown } from "react-icons/bs"
 import me from "../assets/me.png"
 import "../styles/home.scss"
 import "../styles/mediaquery.scss"
-import resume1 from "../assets/resume1.pdf"
+import resume from "../assets/resume.pdf"
 
 const Home = () => {
 
@@ -42,7 +42,7 @@ const Home = () => {
             </motion.h1>
             <p>Fullstack Developer, 
               Hi there! My name is Adarsh Rawat and I’m a software developer and having a knowledge of MERN technology with git and github, docker. I love all things tech and coding, and I love to share my knowledge with others.</p>
-            <button><a href={resume1} target="blank"> RESUME </a></button>
+            <button><a href={resume} target="blank"> RESUME </a></button>
           </div>
           <div className="right">
             <img src={me} alt="My imgae" />
