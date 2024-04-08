@@ -28,8 +28,7 @@ function Contact() {
       setDisableBtn(false)
     }
   }
-
-
+  
 
   return (
     <div id='contact'>

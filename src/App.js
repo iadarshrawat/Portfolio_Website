@@ -20,10 +20,10 @@ const [menuOpen , setMenuOpen] = useState(false);
   <HeaderPhone menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
   <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
   <Home/>
-  <Work/>
   <Timeline/>
+  <Work/>
   <Skills/>
-  <CustomTerminal/>
+  {/* <CustomTerminal/> */}
   <Contact/>
   <Footer/>
   <Toaster/>
