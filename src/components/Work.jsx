@@ -16,7 +16,7 @@ function Work() {
         <Card.Text>
           {item.description} {/* Assuming each project object has a 'description' property */}
         </Card.Text>
-        <Button variant="danger" href={item.url}>Go somewhere</Button> {/* Assuming each project object has a 'url' property */}
+        <Button variant='success' href={item.url}>Go somewhere</Button> {/* Assuming each project object has a 'url' property */}
       </Card.Body>
     </Card>
   ))}
