@@ -1,17 +1,38 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/skills.scss"
 
 function Skills() {
+  
+  const skills = [
+    { cnt: '01', title: 'Programming', list: ['C++', 'Java', 'C', 'JavaScript', 'TypeScript'] },
+    { cnt: '02', title: 'Web Development', list: ['HTML5 & CSS','PostgreSql', 'MongoDB', 'Reactjs and Nextjs',"Nodejs"] },
+    { cnt: '03', title: 'Technical Skills', list: ['Git and Github', 'Docker', 'AWS and Other Cloud', 'Github Action (CI/CD)', 'Kubernetes (k8s)'] },
+    { cnt: '04', title: 'Soft Skills', list: ['Teamwork', 'Problem-Solving', 'Documentation', 'Communication', 'Adaptability'] },
+  ];
+
   return (
-    <div id='skills'>
-        <div className="container">
-          <h1>Skills</h1>
-          <div className="body">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rerum deserunt blanditiis nisi suscipit exercitationem molestias voluptas odit beatae distinctio, animi doloremque, dolorem eaque, incidunt iure porro minus? Provident, magni?
+<>
+    <div className="skills-container">
+      <h1 className="skill-title">SKILLS</h1>
+      <div className="skill-row">
+        {skills.map((skill) => (
+          <div className="skill-card" key={skill.title}>
+            <h1 className="count">{skill.cnt}</h1>
+            <div className="skill-card-title">{skill.title}</div>
+            <div className="skill-list">
+              <ul className='list-items'>
+                {skill.list.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
+        ))}
+      </div>
     </div>
+    </>
   )
+    
 }
 
 export default Skills

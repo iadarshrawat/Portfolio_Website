@@ -5,7 +5,7 @@ import data from './../assets/data.json'
 function Work() {
   return (
     <>
-   <div className="container">
+   <div className="container" style={{marginTop: '4rem'}}>
     <h1 style={{textAlign: 'center', color: 'white', margin:'10px'}}>Projects</h1>
     <div id='work' style={{overflow: 'scroll', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(18rem, 1fr))', gap: '10px', justifyContent: 'center', color: 'red'}}>
   {data.projects.map((item, index) => (
