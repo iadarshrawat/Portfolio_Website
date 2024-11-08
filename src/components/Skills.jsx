@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "../styles/skills.scss"
+import right from '../assets/right.png'
 
 function Skills() {
   
@@ -17,7 +18,7 @@ function Skills() {
       <div className="skill-row">
         {skills.map((skill) => (
           <div className="skill-card" key={skill.title}>
-            <h1 className="count">{skill.cnt}</h1>
+           <img src={right} alt="" height={70}/>
             <div className="skill-card-title">{skill.title}</div>
             <div className="skill-list">
               <ul className='list-items'>

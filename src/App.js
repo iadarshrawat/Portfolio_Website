@@ -23,7 +23,6 @@ const [menuOpen , setMenuOpen] = useState(false);
   <Timeline/>
   <Work/>
   <Skills/>
-  {/* <CustomTerminal/> */}
   <Contact/>
   <Footer/>
   <Toaster/>
