@@ -10,7 +10,7 @@ import HeaderPhone from "./components/HeaderPhone";
 import Work from "./components/Work";
 import Skills from "./components/Skills";
 import CustomTerminal from "./components/CustomTerminal";
-function App() 
+function App() {
 
 
 const [menuOpen , setMenuOpen] = useState(false);
